@@ -1,0 +1,4 @@
+npm init -> It starts a new NodeJS project
+npm install <library> -> It installs lirary JUST in the project
+npm -g install <library> -> It installs the library globaly
+npm install <library> --save-dev -> It install the library and use it just while we are coding, not in deploy

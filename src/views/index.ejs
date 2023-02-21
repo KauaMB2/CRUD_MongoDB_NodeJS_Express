@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head.ejs') %><!-- Inclui o head.ejs dentro do index.ejs !-->
+  <%- include('./partials/navbar.ejs') %><!-- Inclui o head.ejs dentro do index.ejs !-->
+  <body>
+    <div class="content">
+      <% if (users.length > 0) { %>
+        <div class="user-data"></div>
+        <% users.forEach(user =>{ %>
+          <div class="user-data">
+            <h3 class="title"><input id=<%= user.id  %> class="radiobutton" type="radio" name="example"> <%= user.firstName %> <%= user.lastName %> </h3>
+            <p>Id: <%= user.id %></p>
+            <p>Email: <%= user.email %> </p>
+            <p>Senha: <%= user.password %> </p>
+          </div>
+        <% }) %>
+      <% } else { %>
+        <p>Não há usuários para exibir...</p>
+      <% } %>
+    </div>
+  </body>
+  <script type="text/javascript" src="/script/script.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

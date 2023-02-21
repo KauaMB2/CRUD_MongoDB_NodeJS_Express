@@ -1,0 +1,108 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Noto Serif", sans-serif;
+    }
+    body {
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(65, 184, 131, 1) 0%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .user-data {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .content {
+      background-color: #fff;
+      padding: 20px 20px 0px 20px;
+      border-radius: 5px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 70vw;
+      width: 75vw;
+      margin: auto;
+      height: 400px;
+      overflow-y: scroll;
+    }
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: rgba(65, 184, 131, 1);
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+    }
+    .title {
+      color: rgba(0, 212, 255, 1);
+    }
+    .searchField{
+      display: grid;
+      grid-template-rows: auto auto auto;
+    }
+
+    input{
+      padding: 0.625rem;
+      border-radius: 10px;
+      border: 1px solid rgba(180, 180, 180, 1);
+    }
+    input:focus {
+      border-color: blue;
+    }
+    #searchInput,#divNameInputs{
+      margin-bottom: 5px;
+      width: 100%;
+    }
+    button{
+      border: none;
+      border-radius: 14px;
+      padding: 0.5rem;
+      font-weight: bold;
+      transition: background-color 0.5s ease;
+    }
+    #CREATE{
+      color: white;
+      background-color: rgba(48, 186, 143, 1.0);
+    }
+    #READ{
+      color: white;
+      background-color: rgba(31, 117, 254, 1.0);
+    }
+    #UPDATE{
+      color: white;
+      background-color: rgba(255, 167, 67, 1.0);
+    }
+    #DELETE{
+      color: white;
+      background-color: rgba(242, 40, 71, 1.0);
+    }
+    #CREATE:hover{
+      background-color: rgba(28, 166, 123, 1.0);
+    }
+    #READ:hover{
+      background-color: rgba(11, 97, 234, 1.0);
+    }
+    #UPDATE:hover{
+      background-color: rgba(235, 147, 47, 1.0);
+    }
+    #DELETE:hover{
+      background-color: rgba(222, 20, 51, 1.0);
+    }
+    #divButtons{
+      grid-gap: 1rem;
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+    }
