@@ -13,8 +13,8 @@
     "ejs": "^3.1.8",<br>
     "express": "^4.18.2",<br>
     "mongoose": "^6.9.1"<br>
-  }<br><br>
-<br>
+  }<br>
+  ``npm install <library>``<br>
 
 <hr>
 
@@ -28,6 +28,13 @@
 
 <hr>
 
+I used the "cors" library because of the Same-Origin Policy that is built into browsers. Using this library, I allowed requests from different sources. Origins is the name given to the combination of protocol, subdomain, domain and port.
+Example: ``https://mySite.com:80``
 
+The Same-Origin security policy is a security mechanism implemented by web browsers that restricts interactions between different origins (that is, different schemes, hosts, and ports) on the web. This means that a script on one web page can only access resources on another page if they both have the same origin.
+
+This security policy helps prevent attacks such as Cross-Site Scripting (XSS) and session information theft by preventing malicious scripts from accessing sensitive information on other pages. Without this restriction, a script could easily access user information on other web pages and use it for malicious purposes.
+
+There are some exceptions to the Same-Origin policy, such as allowing cross-access between trusted sites using the CORS (Cross-Origin Resource Sharing) feature. However, this policy is generally enforced to protect user security when accessing the web.
 
 
